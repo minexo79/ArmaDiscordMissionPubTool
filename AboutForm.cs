@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace DiscordMissionPubTool
 {
-    public partial class maioForm : Form
+    public partial class AboutForm : Form
     {
-        public maioForm()
+        public AboutForm()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            dpDate.Value = DateTime.Now;
         }
     }
 }

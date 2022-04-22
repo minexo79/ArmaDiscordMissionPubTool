@@ -16,7 +16,7 @@ namespace DiscordMissionPubTool
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new maioForm());
+            Application.Run(new MainForm());
         }
     }
 }
