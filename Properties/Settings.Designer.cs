@@ -25,7 +25,7 @@ namespace DiscordMissionPubTool.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("123456789")]
         public string DiscordChannelID {
             get {
                 return ((string)(this["DiscordChannelID"]));
@@ -34,7 +34,7 @@ namespace DiscordMissionPubTool.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("123456789123456789123456789123456789")]
         public string DiscordWebhookToken {
             get {
                 return ((string)(this["DiscordWebhookToken"]));
@@ -43,7 +43,7 @@ namespace DiscordMissionPubTool.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("黑貓戰術中隊")]
         public string ClanName {
             get {
                 return ((string)(this["ClanName"]));
@@ -52,6 +52,7 @@ namespace DiscordMissionPubTool.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("161061273")]
         public int ClanColor {
             get {
                 return ((int)(this["ClanColor"]));

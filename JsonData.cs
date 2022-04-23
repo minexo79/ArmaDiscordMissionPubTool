@@ -102,91 +102,91 @@ namespace DiscordMissionPubTool
             this.embeds[0].fields.Add(new Fields()
             {
                 name = "整裝開放時間",
-                value = $"{data.ClanMissionReadyTime}",
+                value = data.ClanMissionReadyTime,
                 inline = true
             });
 
             this.embeds[0].fields.Add(new Fields()
             {
                 name = "開始作戰時間",
-                value = $"{data.ClanMissionStartTime}",
+                value = data.ClanMissionStartTime,
                 inline = true
             });
 
             this.embeds[0].fields.Add(new Fields()
             {
                 name = "任務服裝",
-                value = $"{data.ClanMissionCloth}",
+                value = data.ClanMissionCloth,
                 inline = false
             });
 
             this.embeds[0].fields.Add(new Fields()
             {
                 name = "武器限制",
-                value = $"{data.ClanMissionWeapon}",
+                value = data.ClanMissionWeapon,
                 inline = false
             });
 
             this.embeds[0].fields.Add(new Fields()
             {
                 name = "任務補給",
-                value = $"{data.ClanMissionWeapon}",
+                value = data.ClanMissionSupply,
                 inline = false
             });
 
             this.embeds[0].fields.Add(new Fields()
             {
                 name = "重生機制",
-                value = $"{data.ClanMissionWeapon}",
+                value = data.ClanMissionRevive,
                 inline = false
             });
 
             this.embeds[0].fields.Add(new Fields()
             {
                 name = "作戰時間",
-                value = $"{data.ClanMissionTime}",
+                value = data.ClanMissionTime,
                 inline = true
             });
 
             this.embeds[0].fields.Add(new Fields()
             {
                 name = "任務地圖",
-                value = $"{data.ClanMissionMap}",
+                value = data.ClanMissionMap,
                 inline = false
             });
 
             this.embeds[0].fields.Add(new Fields()
             {
                 name = "我方資訊",
-                value = $"{data.ClanMissionPlayer}",
+                value = data.ClanMissionPlayer,
                 inline = true
             });
 
             this.embeds[0].fields.Add(new Fields()
             {
                 name = "敵方資訊",
-                value = $"{data.ClanMissionEnemy}",
+                value = data.ClanMissionEnemy,
                 inline = true
             });
 
             this.embeds[0].fields.Add(new Fields()
             {
                 name = "任務目標",
-                value = $"{data.ClanMissionTarget}",
+                value = data.ClanMissionTarget,
                 inline = false
             });
 
             this.embeds[0].fields.Add(new Fields()
             {
                 name = "備註",
-                value = $"{data.ClanMissionCommit}",
+                value = (String.IsNullOrEmpty(data.ClanMissionCommit)) ? "無" : data.ClanMissionCommit,
                 inline = false
             });
 
             this.embeds[0].fields.Add(new Fields()
             {
                 name = "模組清單",
-                value = $"{data.ClanMissionModList}",
+                value = data.ClanMissionModList,
                 inline = false
             });
         }
