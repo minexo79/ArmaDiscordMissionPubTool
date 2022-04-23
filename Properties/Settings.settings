@@ -1,7 +1,21 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="DiscordMissionPubTool.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DiscordChannelID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">953879276522987540</Value>
+    </Setting>
+    <Setting Name="DiscordWebhookToken" Type="System.String" Scope="User">
+      <Value Profile="(Default)">qTufDHSqbRnWWNJgdl8tiTSukiEgIG9tZzxk8xSwgmcy-Q_khj9RvPXIvud0FY8zBDDb</Value>
+    </Setting>
+    <Setting Name="ClanName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">閃狐101 戰術俱樂部</Value>
+    </Setting>
+    <Setting Name="ClanColor" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">5583820</Value>
+    </Setting>
+    <Setting Name="ClanPictureUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://upload.cc/i1/2022/04/23/LQ9WmM.jpg</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>

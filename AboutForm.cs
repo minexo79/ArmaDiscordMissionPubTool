@@ -16,5 +16,15 @@ namespace DiscordMissionPubTool
         {
             InitializeComponent();
         }
+
+        private void btnBlog_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://blog.minexo79.club");
+        }
+
+        private void btnGithub_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/minexo79");
+        }
     }
 }

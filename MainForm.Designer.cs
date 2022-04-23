@@ -52,8 +52,8 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.tbBeginTime = new System.Windows.Forms.TextBox();
-            this.tbEndTime = new System.Windows.Forms.TextBox();
+            this.tbReadyTime = new System.Windows.Forms.TextBox();
+            this.tbStartTime = new System.Windows.Forms.TextBox();
             this.dpDate = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
@@ -145,6 +145,7 @@
             this.tbCommit.Location = new System.Drawing.Point(7, 594);
             this.tbCommit.Multiline = true;
             this.tbCommit.Name = "tbCommit";
+            this.tbCommit.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tbCommit.Size = new System.Drawing.Size(397, 108);
             this.tbCommit.TabIndex = 17;
             // 
@@ -178,6 +179,7 @@
             this.tbPlayer.Location = new System.Drawing.Point(3, 3);
             this.tbPlayer.Multiline = true;
             this.tbPlayer.Name = "tbPlayer";
+            this.tbPlayer.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tbPlayer.Size = new System.Drawing.Size(383, 72);
             this.tbPlayer.TabIndex = 2;
             // 
@@ -187,7 +189,7 @@
             this.tabPage8.Location = new System.Drawing.Point(4, 26);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(389, 88);
+            this.tabPage8.Size = new System.Drawing.Size(389, 78);
             this.tabPage8.TabIndex = 1;
             this.tabPage8.Text = "敵方";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -198,7 +200,8 @@
             this.tbEnemy.Location = new System.Drawing.Point(3, 3);
             this.tbEnemy.Multiline = true;
             this.tbEnemy.Name = "tbEnemy";
-            this.tbEnemy.Size = new System.Drawing.Size(383, 82);
+            this.tbEnemy.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbEnemy.Size = new System.Drawing.Size(383, 72);
             this.tbEnemy.TabIndex = 2;
             // 
             // tabControl2
@@ -234,6 +237,7 @@
             this.tbMissionCloth.Location = new System.Drawing.Point(3, 3);
             this.tbMissionCloth.Multiline = true;
             this.tbMissionCloth.Name = "tbMissionCloth";
+            this.tbMissionCloth.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tbMissionCloth.Size = new System.Drawing.Size(383, 72);
             this.tbMissionCloth.TabIndex = 1;
             // 
@@ -252,7 +256,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 26);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(389, 88);
+            this.tabPage2.Size = new System.Drawing.Size(389, 78);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "武器限制";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -263,7 +267,8 @@
             this.tbMissionWeapon.Location = new System.Drawing.Point(3, 3);
             this.tbMissionWeapon.Multiline = true;
             this.tbMissionWeapon.Name = "tbMissionWeapon";
-            this.tbMissionWeapon.Size = new System.Drawing.Size(383, 82);
+            this.tbMissionWeapon.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbMissionWeapon.Size = new System.Drawing.Size(383, 72);
             this.tbMissionWeapon.TabIndex = 1;
             // 
             // tabPage3
@@ -272,7 +277,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 26);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(389, 88);
+            this.tabPage3.Size = new System.Drawing.Size(389, 78);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "任務補給";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -283,7 +288,8 @@
             this.tbMissionSupply.Location = new System.Drawing.Point(3, 3);
             this.tbMissionSupply.Multiline = true;
             this.tbMissionSupply.Name = "tbMissionSupply";
-            this.tbMissionSupply.Size = new System.Drawing.Size(383, 82);
+            this.tbMissionSupply.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbMissionSupply.Size = new System.Drawing.Size(383, 72);
             this.tbMissionSupply.TabIndex = 1;
             // 
             // tabPage4
@@ -292,7 +298,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 26);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(389, 88);
+            this.tabPage4.Size = new System.Drawing.Size(389, 78);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "重生機制";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -303,7 +309,8 @@
             this.tbMissionRevive.Location = new System.Drawing.Point(3, 3);
             this.tbMissionRevive.Multiline = true;
             this.tbMissionRevive.Name = "tbMissionRevive";
-            this.tbMissionRevive.Size = new System.Drawing.Size(383, 82);
+            this.tbMissionRevive.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbMissionRevive.Size = new System.Drawing.Size(383, 72);
             this.tbMissionRevive.TabIndex = 1;
             // 
             // label4
@@ -338,8 +345,8 @@
             this.tableLayoutPanel1.Controls.Add(this.label2, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.tbBeginTime, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.tbEndTime, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.tbReadyTime, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.tbStartTime, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.dpDate, 0, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(7, 7);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -356,9 +363,9 @@
             this.label2.Location = new System.Drawing.Point(267, 1);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.label2.Size = new System.Drawing.Size(86, 23);
+            this.label2.Size = new System.Drawing.Size(60, 23);
             this.label2.TabIndex = 3;
-            this.label2.Text = "整裝結束時間";
+            this.label2.Text = "作戰時間";
             // 
             // label1
             // 
@@ -366,25 +373,25 @@
             this.label1.Location = new System.Drawing.Point(135, 1);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.label1.Size = new System.Drawing.Size(86, 23);
+            this.label1.Size = new System.Drawing.Size(60, 23);
             this.label1.TabIndex = 2;
-            this.label1.Text = "整裝開始時間";
+            this.label1.Text = "整裝時間";
             // 
-            // tbBeginTime
+            // tbReadyTime
             // 
-            this.tbBeginTime.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbBeginTime.Location = new System.Drawing.Point(135, 28);
-            this.tbBeginTime.Name = "tbBeginTime";
-            this.tbBeginTime.Size = new System.Drawing.Size(125, 25);
-            this.tbBeginTime.TabIndex = 4;
+            this.tbReadyTime.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbReadyTime.Location = new System.Drawing.Point(135, 28);
+            this.tbReadyTime.Name = "tbReadyTime";
+            this.tbReadyTime.Size = new System.Drawing.Size(125, 25);
+            this.tbReadyTime.TabIndex = 4;
             // 
-            // tbEndTime
+            // tbStartTime
             // 
-            this.tbEndTime.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbEndTime.Location = new System.Drawing.Point(267, 28);
-            this.tbEndTime.Name = "tbEndTime";
-            this.tbEndTime.Size = new System.Drawing.Size(126, 25);
-            this.tbEndTime.TabIndex = 5;
+            this.tbStartTime.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbStartTime.Location = new System.Drawing.Point(267, 28);
+            this.tbStartTime.Name = "tbStartTime";
+            this.tbStartTime.Size = new System.Drawing.Size(126, 25);
+            this.tbStartTime.TabIndex = 5;
             // 
             // dpDate
             // 
@@ -543,6 +550,7 @@
             this.tbMissionTarget.Location = new System.Drawing.Point(7, 455);
             this.tbMissionTarget.Multiline = true;
             this.tbMissionTarget.Name = "tbMissionTarget";
+            this.tbMissionTarget.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tbMissionTarget.Size = new System.Drawing.Size(397, 108);
             this.tbMissionTarget.TabIndex = 18;
             // 
@@ -681,8 +689,8 @@
         private System.Windows.Forms.DateTimePicker dpDate;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox tbBeginTime;
-        private System.Windows.Forms.TextBox tbEndTime;
+        private System.Windows.Forms.TextBox tbReadyTime;
+        private System.Windows.Forms.TextBox tbStartTime;
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;

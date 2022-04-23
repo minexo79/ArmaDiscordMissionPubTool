@@ -8,22 +8,78 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DiscordMissionPubTool.Properties
-{
-
-
+namespace DiscordMissionPubTool.Properties {
+    
+    
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "11.0.0.0")]
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase
-    {
-
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.1.0.0")]
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
-
-        public static Settings Default
-        {
-            get
-            {
+        
+        public static Settings Default {
+            get {
                 return defaultInstance;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("953879276522987540")]
+        public string DiscordChannelID {
+            get {
+                return ((string)(this["DiscordChannelID"]));
+            }
+            set {
+                this["DiscordChannelID"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("qTufDHSqbRnWWNJgdl8tiTSukiEgIG9tZzxk8xSwgmcy-Q_khj9RvPXIvud0FY8zBDDb")]
+        public string DiscordWebhookToken {
+            get {
+                return ((string)(this["DiscordWebhookToken"]));
+            }
+            set {
+                this["DiscordWebhookToken"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("閃狐101 戰術俱樂部")]
+        public string ClanName {
+            get {
+                return ((string)(this["ClanName"]));
+            }
+            set {
+                this["ClanName"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("5583820")]
+        public int ClanColor {
+            get {
+                return ((int)(this["ClanColor"]));
+            }
+            set {
+                this["ClanColor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://upload.cc/i1/2022/04/23/LQ9WmM.jpg")]
+        public string ClanPictureUrl {
+            get {
+                return ((string)(this["ClanPictureUrl"]));
+            }
+            set {
+                this["ClanPictureUrl"] = value;
             }
         }
     }
