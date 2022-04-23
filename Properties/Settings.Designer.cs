@@ -25,19 +25,10 @@ namespace DiscordMissionPubTool.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("123456789")]
-        public string DiscordChannelID {
+        [global::System.Configuration.DefaultSettingValueAttribute("12345678912345")]
+        public string DiscordWebhookID {
             get {
-                return ((string)(this["DiscordChannelID"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("123456789123456789123456789123456789")]
-        public string DiscordWebhookToken {
-            get {
-                return ((string)(this["DiscordWebhookToken"]));
+                return ((string)(this["DiscordWebhookID"]));
             }
         }
         
@@ -52,10 +43,10 @@ namespace DiscordMissionPubTool.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("161061273")]
-        public int ClanColor {
+        [global::System.Configuration.DefaultSettingValueAttribute("707070")]
+        public string ClanColor {
             get {
-                return ((int)(this["ClanColor"]));
+                return ((string)(this["ClanColor"]));
             }
         }
         
@@ -65,6 +56,15 @@ namespace DiscordMissionPubTool.Properties {
         public string ClanPictureUrl {
             get {
                 return ((string)(this["ClanPictureUrl"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1234567891234512345678912345123456789123451234567891234512345678912345123456789")]
+        public string DiscordWebhookToken {
+            get {
+                return ((string)(this["DiscordWebhookToken"]));
             }
         }
     }

@@ -15,7 +15,7 @@ namespace DiscordMissionPubTool
         {
             Boolean warnMsg = false;
 
-            if (String.IsNullOrEmpty(Properties.Settings.Default.DiscordChannelID))
+            if (String.IsNullOrEmpty(Properties.Settings.Default.DiscordWebhookID))
                 warnMsg = true;
             if (String.IsNullOrEmpty(Properties.Settings.Default.DiscordWebhookToken))
                 warnMsg = true;

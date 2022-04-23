@@ -109,7 +109,7 @@ namespace DiscordMissionPubTool
             {
                 using (HttpClient client = new HttpClient())
                 {
-                    string channelID = Properties.Settings.Default.DiscordChannelID;
+                    string webhookID = Properties.Settings.Default.DiscordWebhookID;
                     string webhookToken = Properties.Settings.Default.DiscordWebhookToken;
                     NotifyForm notifyForm;
 
@@ -124,15 +124,15 @@ namespace DiscordMissionPubTool
                     StringContent content = new StringContent(body, Encoding.UTF8, "application/json");
 
                     HttpResponseMessage responseMessage = 
-                        await client.PostAsync($"{channelID}/{webhookToken}", content);
+                        await client.PostAsync($"{webhookID}/{webhookToken}", content);
 
                     if (responseMessage.StatusCode == System.Net.HttpStatusCode.NoContent ||
                         responseMessage.StatusCode == System.Net.HttpStatusCode.OK)
                     {
-                        notifyForm = new NotifyForm("提示", "已發佈至指定頻道!!");
+                        notifyForm = new NotifyForm("提示", "已發佈至指定頻道！");
                     } else
                     {
-                        notifyForm = new NotifyForm("提示", "發布失敗!!請檢查網路是否連上，或資訊有無正確填入。\n" + 
+                        notifyForm = new NotifyForm("提示", "發布失敗！\n請檢查網路是否連上，或資訊有無正確填入。\n" + 
                             $"Http Status Code：{responseMessage.StatusCode}");
                     }
 

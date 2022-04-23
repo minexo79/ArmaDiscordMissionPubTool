@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace DiscordMissionPubTool
 {
@@ -85,7 +86,7 @@ namespace DiscordMissionPubTool
             this.embeds.Add(new Embed());
 
             this.embeds[0].title = $"任務代號：{data.ClanMissionCall}";
-            this.embeds[0].color = Properties.Settings.Default.ClanColor;
+            this.embeds[0].color = Int32.Parse(Properties.Settings.Default.ClanColor, NumberStyles.HexNumber);
             this.embeds[0].author.name = Properties.Settings.Default.ClanName + "任務";
             this.embeds[0].thumbnail.url
                 = (!String.IsNullOrEmpty(Properties.Settings.Default.ClanPictureUrl)) 
