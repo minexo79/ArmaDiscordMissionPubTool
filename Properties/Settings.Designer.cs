@@ -23,63 +23,47 @@ namespace DiscordMissionPubTool.Properties {
             }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("953879276522987540")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string DiscordChannelID {
             get {
                 return ((string)(this["DiscordChannelID"]));
             }
-            set {
-                this["DiscordChannelID"] = value;
-            }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("qTufDHSqbRnWWNJgdl8tiTSukiEgIG9tZzxk8xSwgmcy-Q_khj9RvPXIvud0FY8zBDDb")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string DiscordWebhookToken {
             get {
                 return ((string)(this["DiscordWebhookToken"]));
             }
-            set {
-                this["DiscordWebhookToken"] = value;
-            }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("閃狐101 戰術俱樂部")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string ClanName {
             get {
                 return ((string)(this["ClanName"]));
             }
-            set {
-                this["ClanName"] = value;
-            }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("5583820")]
         public int ClanColor {
             get {
                 return ((int)(this["ClanColor"]));
             }
-            set {
-                this["ClanColor"] = value;
-            }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://upload.cc/i1/2022/04/23/LQ9WmM.jpg")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string ClanPictureUrl {
             get {
                 return ((string)(this["ClanPictureUrl"]));
-            }
-            set {
-                this["ClanPictureUrl"] = value;
             }
         }
     }
