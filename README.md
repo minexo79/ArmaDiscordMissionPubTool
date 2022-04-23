@@ -20,7 +20,7 @@ https://discord.com/api/webhooks/<Webhook ID>/<Webhook Token>
 
 | 欄位 | 用途 | 必填? |
 |-----|------|------|
-|DiscordChannelID|WebHook ID，可在Webhook URL中找到。|Y|
+|DiscordWebhookID|WebHook ID，可在Webhook URL中找到。|Y|
 |DiscordWebhookToken|Webhook 權杖(驗證碼)，可在Webhook URL中找到。|Y|
 |DiscordTagRoleID|Discord 身分組ID|Y|
 |ClanName|戰隊名稱。|Y|
