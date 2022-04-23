@@ -11,11 +11,11 @@ Arma Discord 戰隊任務發佈工具<br>
 3. 點選Webhooks並點選New Webhook 創建新的Webhooks。<br>
 ![](img/03.png)
 4. 設定Webhooks的名稱還有所在頻道，完成後點選Copy Webhook URL複製網址。<br>
+![](img/04.png)
 複製的網址會像這樣子顯示：
 ```
 https://discord.com/api/webhooks/<頻道ID>/<Webhook Token>
 ```
-![](img/04.png)
 5. 打開`DiscordMissionPubTool.exe.config`，根據下方表格及範例，填入對應的資訊：
 
 | 欄位 | 用途 | 必填? |
