@@ -47,3 +47,4 @@ https://discord.com/api/webhooks/<頻道ID>/<Webhook Token>
 </applicationSettings>
 ```
 ## 授權
+本軟體以[啤酒軟體（Beerware）](https://en.wikipedia.org/wiki/Beerware)方式授權並釋出。
