@@ -73,14 +73,15 @@ namespace DiscordMissionPubTool
     {
         public string username { get; set; }
         public string avatar_url { get; set; }
+        public string content { get; set; }
         public List<Embed> embeds { get; set; }
 
         public WebhookBody(ClanData data)
         {
             this.username = "任務發佈";
-
             this.avatar_url = 
                 "https://cdn.icon-icons.com/icons2/3433/PNG/512/war_army_soldier_icon_218816.png";
+            this.content = $"<@&{Properties.Settings.Default.DiscordTagRoleID}>";
 
             this.embeds = new List<Embed>();
             this.embeds.Add(new Embed());
@@ -177,12 +178,15 @@ namespace DiscordMissionPubTool
                 inline = false
             });
 
-            this.embeds[0].fields.Add(new Fields()
+            if(!String.IsNullOrEmpty(data.ClanMissionCommit))
             {
-                name = "備註",
-                value = (String.IsNullOrEmpty(data.ClanMissionCommit)) ? "無" : data.ClanMissionCommit,
-                inline = false
-            });
+                this.embeds[0].fields.Add(new Fields()
+                {
+                    name = "備註",
+                    value = data.ClanMissionCommit,
+                    inline = false
+                });
+            }
 
             this.embeds[0].fields.Add(new Fields()
             {

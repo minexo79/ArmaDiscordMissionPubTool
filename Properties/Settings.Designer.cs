@@ -25,7 +25,7 @@ namespace DiscordMissionPubTool.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("12345678912345")]
+        [global::System.Configuration.DefaultSettingValueAttribute("12345678912345678912")]
         public string DiscordWebhookID {
             get {
                 return ((string)(this["DiscordWebhookID"]));
@@ -43,7 +43,7 @@ namespace DiscordMissionPubTool.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("707070")]
+        [global::System.Configuration.DefaultSettingValueAttribute("002054")]
         public string ClanColor {
             get {
                 return ((string)(this["ClanColor"]));
@@ -61,10 +61,19 @@ namespace DiscordMissionPubTool.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("1234567891234512345678912345123456789123451234567891234512345678912345123456789")]
+        [global::System.Configuration.DefaultSettingValueAttribute("123456789123456789121234567891234567891212345678912345678912123456789")]
         public string DiscordWebhookToken {
             get {
                 return ((string)(this["DiscordWebhookToken"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("12345678912345678912")]
+        public string DiscordTagRoleID {
+            get {
+                return ((string)(this["DiscordTagRoleID"]));
             }
         }
     }

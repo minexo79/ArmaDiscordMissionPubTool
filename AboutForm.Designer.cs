@@ -76,9 +76,9 @@
             this.label3.Location = new System.Drawing.Point(8, 123);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(168, 19);
+            this.label3.Size = new System.Drawing.Size(181, 19);
             this.label3.TabIndex = 3;
-            this.label3.Text = "版本：V1.0(20220423)";
+            this.label3.Text = "版本：V1.0.1(20220423)";
             // 
             // btnBlog
             // 
