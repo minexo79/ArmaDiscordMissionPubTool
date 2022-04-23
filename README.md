@@ -4,15 +4,23 @@ Arma Discord 戰隊任務發佈工具<br>
 ![](img/00.png)
 ---
 ## 使用教學
-1. 點選頻道旁邊的齒輪，進入設定頁面。<br>
+1. 點選頻道旁邊的齒輪，進入設定頁面。
+
 ![](img/01.png)
-2. 點選Intergrations(整合)。<br>
+
+2. 點選Intergrations(整合)。
+
 ![](img/02.png)
-3. 點選Webhooks並點選New Webhook 創建新的Webhooks。<br>
+
+3. 點選Webhooks並點選New Webhook 創建新的Webhooks。
+
 ![](img/03.png)
-4. 設定Webhooks的名稱還有所在頻道，完成後點選Copy Webhook URL(複製Webhook網址)。<br>
+
+4. 設定Webhooks的名稱還有所在頻道，完成後點選Copy Webhook URL(複製Webhook網址)。
+
 ![](img/04.png)
-複製的網址會像這樣子：
+
+複製的網址會像這樣子：<br>
 ```
 https://discord.com/api/webhooks/<Webhook ID>/<Webhook Token>
 ```
