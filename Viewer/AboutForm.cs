@@ -12,9 +12,11 @@ namespace DiscordMissionPubTool
 {
     public partial class AboutForm : Form
     {
-        public AboutForm()
+        public AboutForm(string text)
         {
             InitializeComponent();
+
+            this.Text = text;
         }
 
         private void btnBlog_Click(object sender, EventArgs e)

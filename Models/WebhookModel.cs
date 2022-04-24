@@ -1,39 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Globalization;
 
-namespace DiscordMissionPubTool
+namespace DiscordMissionPubTool.Models
 {
-    /// <summary>
-    /// Clan Data
-    /// </summary>
-    /// 
-    public class ClanData
-    {
-        public DateTime ClanMissionDate { get; set; }
-        public string ClanMissionReadyTime { get; set; }
-        public string ClanMissionStartTime { get; set; }
-        public string ClanMissionCall { get; set; }
-        public string ClanMissionCloth { get; set; }
-        public string ClanMissionWeapon { get; set; }
-        public string ClanMissionSupply { get; set; }
-        public string ClanMissionRevive { get; set; }
-        public string ClanMissionTime { get; set; }
-        public string ClanMissionMap { get; set; }
-        public string ClanMissionPlayer { get; set; }
-        public string ClanMissionEnemy { get; set; }
-        public string ClanMissionTarget { get; set; }
-        public string ClanMissionCommit { get; set; }
-        public string ClanMissionModList { get; set; }
-    }
-
-    /// <summary>
-    /// Discord WebHook Json
-    /// </summary>
-
     public class Fields
     {
         public string name { get; set; }
@@ -69,121 +42,126 @@ namespace DiscordMissionPubTool
             author = new Author();
         }
     }
-    public class WebhookBody
+
+    public class WebhookModel
     {
         public string username { get; set; }
         public string avatar_url { get; set; }
         public string content { get; set; }
-        public List<Embed> embeds { get; set; }
+        public Embed[] embeds { get; set; }
 
-        public WebhookBody(ClanData data)
+        public WebhookModel(ref ClanModel model, string clanName, string clanColor, string clanPictureUrl, string roleID)
         {
             this.username = "任務發佈";
-            this.avatar_url = 
-                "https://cdn.icon-icons.com/icons2/3433/PNG/512/war_army_soldier_icon_218816.png";
-            this.content = $"<@&{Properties.Settings.Default.DiscordTagRoleID}>";
 
-            this.embeds = new List<Embed>();
-            this.embeds.Add(new Embed());
+            this.avatar_url = "https://cdn.icon-icons.com/icons2/3433/PNG/512/war_army_soldier_icon_218816.png";
 
-            this.embeds[0].title = $"任務代號：{data.ClanMissionCall}";
-            this.embeds[0].color = Int32.Parse(Properties.Settings.Default.ClanColor, NumberStyles.HexNumber);
-            this.embeds[0].author.name = Properties.Settings.Default.ClanName + "任務";
+            this.content = $"<@&{roleID}>";
+
+            this.embeds = new Embed[1];
+            this.embeds[0] = new Embed();
+
+            this.embeds[0].title = $"任務代號：{model.ClanMissionCall}";
+
+            this.embeds[0].color = Int32.Parse(clanColor, NumberStyles.HexNumber);
+
+            this.embeds[0].author.name = clanName + "任務";
+
             this.embeds[0].thumbnail.url
-                = (!String.IsNullOrEmpty(Properties.Settings.Default.ClanPictureUrl)) 
-                ? Properties.Settings.Default.ClanPictureUrl : "";
-            this.embeds[0].footer.text = Properties.Settings.Default.ClanName;
+                = (String.IsNullOrEmpty(clanPictureUrl)) ? clanPictureUrl : "";
+
+            this.embeds[0].footer.text = clanName;
 
             this.embeds[0].fields.Add(new Fields()
             {
                 name = "任務日期",
-                value = data.ClanMissionDate.ToShortDateString(),
+                value = model.ClanMissionDate.ToShortDateString(),
                 inline = true
             });
 
             this.embeds[0].fields.Add(new Fields()
             {
                 name = "整裝開放時間",
-                value = data.ClanMissionReadyTime,
+                value = model.ClanMissionReadyTime,
                 inline = true
             });
 
             this.embeds[0].fields.Add(new Fields()
             {
                 name = "開始作戰時間",
-                value = data.ClanMissionStartTime,
+                value = model.ClanMissionStartTime,
                 inline = true
             });
 
             this.embeds[0].fields.Add(new Fields()
             {
                 name = "任務服裝",
-                value = data.ClanMissionCloth,
+                value = model.ClanMissionCloth,
                 inline = false
             });
 
             this.embeds[0].fields.Add(new Fields()
             {
                 name = "武器限制",
-                value = data.ClanMissionWeapon,
+                value = model.ClanMissionWeapon,
                 inline = false
             });
 
             this.embeds[0].fields.Add(new Fields()
             {
                 name = "任務補給",
-                value = data.ClanMissionSupply,
+                value = model.ClanMissionSupply,
                 inline = false
             });
 
             this.embeds[0].fields.Add(new Fields()
             {
                 name = "重生機制",
-                value = data.ClanMissionRevive,
+                value = model.ClanMissionRevive,
                 inline = false
             });
 
             this.embeds[0].fields.Add(new Fields()
             {
                 name = "作戰時間",
-                value = data.ClanMissionTime,
+                value = model.ClanMissionTime,
                 inline = true
             });
 
             this.embeds[0].fields.Add(new Fields()
             {
                 name = "任務地圖",
-                value = data.ClanMissionMap,
+                value = model.ClanMissionMap,
                 inline = false
             });
 
             this.embeds[0].fields.Add(new Fields()
             {
                 name = "我方資訊",
-                value = data.ClanMissionPlayer,
+                value = model.ClanMissionPlayer,
                 inline = true
             });
 
             this.embeds[0].fields.Add(new Fields()
             {
                 name = "敵方資訊",
-                value = data.ClanMissionEnemy,
+                value = model.ClanMissionEnemy,
                 inline = true
             });
 
             this.embeds[0].fields.Add(new Fields()
             {
                 name = "任務目標",
-                value = data.ClanMissionTarget,
+                value = model.ClanMissionTarget,
                 inline = false
             });
 
-            if(!String.IsNullOrEmpty(data.ClanMissionCommit))
+            if (!String.IsNullOrEmpty(model.ClanMissionCommit))
             {
                 this.embeds[0].fields.Add(new Fields()
                 {
                     name = "備註",
-                    value = data.ClanMissionCommit,
+                    value = model.ClanMissionCommit,
                     inline = false
                 });
             }
@@ -191,7 +169,7 @@ namespace DiscordMissionPubTool
             this.embeds[0].fields.Add(new Fields()
             {
                 name = "模組清單",
-                value = data.ClanMissionModList,
+                value = model.ClanMissionModList,
                 inline = false
             });
         }

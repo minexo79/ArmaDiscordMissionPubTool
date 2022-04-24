@@ -37,13 +37,13 @@
             // 
             // btnOK
             // 
+            this.btnOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnOK.AutoSize = true;
-            this.btnOK.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnOK.Font = new System.Drawing.Font("Microsoft JhengHei", 14F, System.Drawing.FontStyle.Bold);
+            this.btnOK.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnOK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnOK.Location = new System.Drawing.Point(3, 40);
+            this.btnOK.Location = new System.Drawing.Point(116, 106);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(213, 36);
+            this.btnOK.Size = new System.Drawing.Size(100, 36);
             this.btnOK.TabIndex = 1;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
@@ -54,15 +54,15 @@
             this.tableLayoutPanel1.AutoSize = true;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.btnOK, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.lbNotifyMessage, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnOK, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(219, 79);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(219, 145);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // lbNotifyMessage
@@ -73,7 +73,7 @@
             this.lbNotifyMessage.Location = new System.Drawing.Point(3, 0);
             this.lbNotifyMessage.Name = "lbNotifyMessage";
             this.lbNotifyMessage.Padding = new System.Windows.Forms.Padding(10);
-            this.lbNotifyMessage.Size = new System.Drawing.Size(213, 37);
+            this.lbNotifyMessage.Size = new System.Drawing.Size(213, 103);
             this.lbNotifyMessage.TabIndex = 0;
             this.lbNotifyMessage.Text = "labelNotifyMessage";
             // 
@@ -82,7 +82,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(219, 79);
+            this.ClientSize = new System.Drawing.Size(219, 145);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
