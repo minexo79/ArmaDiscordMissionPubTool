@@ -70,7 +70,7 @@ namespace DiscordMissionPubTool.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("12345678912345678912")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string DiscordTagRoleID {
             get {
                 return ((string)(this["DiscordTagRoleID"]));
