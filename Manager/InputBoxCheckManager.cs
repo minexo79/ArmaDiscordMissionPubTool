@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using DiscordMissionPubTool.Models;
 
-namespace DiscordMissionPubTool.Services
+namespace DiscordMissionPubTool.Manager
 {
-    public static class EmptyCheck
+    public static class InputBoxCheckManager
     {
         public static string InputBoxEmptyCheck(ref ClanModel clanModel)
         {

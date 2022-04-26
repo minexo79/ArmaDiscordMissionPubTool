@@ -1,6 +1,6 @@
 ﻿namespace DiscordMissionPubTool
 {
-    partial class AboutForm
+    partial class AboutView
     {
         /// <summary>
         /// Required designer variable.
@@ -28,27 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutView));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnBlog = new System.Windows.Forms.Button();
-            this.btnGithub = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.imgBlog = new System.Windows.Forms.PictureBox();
+            this.imgGithub = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.imgBlog)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgGithub)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Window;
+            this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.Font = new System.Drawing.Font("Microsoft JhengHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(19, 9);
+            this.label1.Location = new System.Drawing.Point(8, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
@@ -76,36 +78,16 @@
             this.label3.Location = new System.Drawing.Point(8, 123);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(181, 19);
+            this.label3.Size = new System.Drawing.Size(164, 19);
             this.label3.TabIndex = 3;
-            this.label3.Text = "版本：V1.0.1(20220423)";
-            // 
-            // btnBlog
-            // 
-            this.btnBlog.Image = global::DiscordMissionPubTool.Properties.Resources.blog;
-            this.btnBlog.Location = new System.Drawing.Point(12, 145);
-            this.btnBlog.Name = "btnBlog";
-            this.btnBlog.Size = new System.Drawing.Size(139, 113);
-            this.btnBlog.TabIndex = 4;
-            this.btnBlog.UseVisualStyleBackColor = true;
-            this.btnBlog.Click += new System.EventHandler(this.btnBlog_Click);
-            // 
-            // btnGithub
-            // 
-            this.btnGithub.Image = global::DiscordMissionPubTool.Properties.Resources.github;
-            this.btnGithub.Location = new System.Drawing.Point(182, 145);
-            this.btnGithub.Name = "btnGithub";
-            this.btnGithub.Size = new System.Drawing.Size(137, 113);
-            this.btnGithub.TabIndex = 5;
-            this.btnGithub.UseVisualStyleBackColor = true;
-            this.btnGithub.Click += new System.EventHandler(this.btnGithub_Click);
+            this.label3.Text = "版本：V1.1(2022xxxx)";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(20, 278);
+            this.label4.Location = new System.Drawing.Point(9, 220);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(299, 17);
@@ -118,7 +100,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label5.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label5.Location = new System.Drawing.Point(103, 261);
+            this.label5.Location = new System.Drawing.Point(9, 203);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(216, 17);
@@ -150,17 +132,39 @@
             this.label7.TabIndex = 9;
             this.label7.Text = "聯繫我：iblackcat#4119";
             // 
-            // AboutForm
+            // imgBlog
+            // 
+            this.imgBlog.BackgroundImage = global::DiscordMissionPubTool.Properties.Resources.blog;
+            this.imgBlog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.imgBlog.Location = new System.Drawing.Point(320, 12);
+            this.imgBlog.Name = "imgBlog";
+            this.imgBlog.Size = new System.Drawing.Size(113, 105);
+            this.imgBlog.TabIndex = 10;
+            this.imgBlog.TabStop = false;
+            this.imgBlog.Click += new System.EventHandler(this.imgBlog_Click);
+            // 
+            // imgGithub
+            // 
+            this.imgGithub.BackgroundImage = global::DiscordMissionPubTool.Properties.Resources.github;
+            this.imgGithub.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.imgGithub.Location = new System.Drawing.Point(320, 129);
+            this.imgGithub.Name = "imgGithub";
+            this.imgGithub.Size = new System.Drawing.Size(113, 105);
+            this.imgGithub.TabIndex = 11;
+            this.imgGithub.TabStop = false;
+            this.imgGithub.Click += new System.EventHandler(this.imgGithub_Click);
+            // 
+            // AboutView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(331, 304);
+            this.ClientSize = new System.Drawing.Size(445, 246);
+            this.Controls.Add(this.imgGithub);
+            this.Controls.Add(this.imgBlog);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.btnGithub);
-            this.Controls.Add(this.btnBlog);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -169,9 +173,11 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.Name = "AboutForm";
+            this.Name = "AboutView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AboutForm";
+            ((System.ComponentModel.ISupportInitialize)(this.imgBlog)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgGithub)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -181,11 +187,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnBlog;
-        private System.Windows.Forms.Button btnGithub;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox imgBlog;
+        private System.Windows.Forms.PictureBox imgGithub;
     }
 }

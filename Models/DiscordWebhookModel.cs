@@ -43,20 +43,20 @@ namespace DiscordMissionPubTool.Models
         }
     }
 
-    public class WebhookModel
+    public class DiscordWebhookModel
     {
         public string username { get; set; }
         public string avatar_url { get; set; }
         public string content { get; set; }
         public Embed[] embeds { get; set; }
 
-        public WebhookModel(ref ClanModel model, string clanName, string clanColor, string clanPictureUrl, string roleID)
+        public DiscordWebhookModel(ref ClanModel model, string clanName, string clanColor, string clanPictureUrl, string roleID)
         {
             this.username = "任務發佈";
 
             this.avatar_url = "https://cdn.icon-icons.com/icons2/3433/PNG/512/war_army_soldier_icon_218816.png";
 
-            this.content = $"<@&{roleID}>";
+            this.content = (!String.IsNullOrEmpty(roleID)) ? $"<@&{roleID}>" : "";
 
             this.embeds = new Embed[1];
             this.embeds[0] = new Embed();
@@ -67,8 +67,7 @@ namespace DiscordMissionPubTool.Models
 
             this.embeds[0].author.name = clanName + "任務";
 
-            this.embeds[0].thumbnail.url
-                = (String.IsNullOrEmpty(clanPictureUrl)) ? clanPictureUrl : "";
+            this.embeds[0].thumbnail.url = (!String.IsNullOrEmpty(clanPictureUrl)) ? clanPictureUrl : "";
 
             this.embeds[0].footer.text = clanName;
 

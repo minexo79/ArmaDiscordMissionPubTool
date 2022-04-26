@@ -11,20 +11,15 @@ using System.Windows.Forms;
 
 namespace DiscordMissionPubTool
 {
-    public partial class NotifyForm : Form
+    public partial class NotifyView : Form
     {
-        public NotifyForm(string formName, string formMsg)
+        public NotifyView(string formName, string formMsg)
         {
             InitializeComponent();
 
             this.MaximizeBox = false;
             this.Text = formName;
             lbNotifyMessage.Text = formMsg;
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-            SystemSounds.Beep.Play();
         }
 
         private void btnOK_Click(object sender, EventArgs e)
