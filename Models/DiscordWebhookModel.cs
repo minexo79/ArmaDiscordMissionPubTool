@@ -56,7 +56,21 @@ namespace DiscordMissionPubTool.Models
 
             this.avatar_url = "https://cdn.icon-icons.com/icons2/3433/PNG/512/war_army_soldier_icon_218816.png";
 
-            this.content = (!String.IsNullOrEmpty(roleID)) ? $"<@&{roleID}>" : "";
+            if(!String.IsNullOrEmpty(roleID))
+            {
+                // more than one role
+                if (roleID.IndexOf(',') > -1)
+                {
+                    string[] role = roleID.Split(',');
+
+                    foreach(string _role in role)
+                    {
+                        this.content += $"<@&{_role}>";
+                    }
+                }
+                else
+                    this.content = $"<@&{roleID}>";
+            }
 
             this.embeds = new Embed[1];
             this.embeds[0] = new Embed();

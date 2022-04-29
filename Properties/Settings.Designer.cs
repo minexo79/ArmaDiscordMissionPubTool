@@ -25,7 +25,7 @@ namespace DiscordMissionPubTool.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("12345678912345678912")]
+        [global::System.Configuration.DefaultSettingValueAttribute("123456789123456789")]
         public string DiscordWebhookID {
             get {
                 return ((string)(this["DiscordWebhookID"]));
@@ -61,7 +61,7 @@ namespace DiscordMissionPubTool.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("123456789123456789121234567891234567891212345678912345678912123456789")]
+        [global::System.Configuration.DefaultSettingValueAttribute("123456789123456789123456789123456789123456789123456789123456789123456789")]
         public string DiscordWebhookToken {
             get {
                 return ((string)(this["DiscordWebhookToken"]));
@@ -70,7 +70,7 @@ namespace DiscordMissionPubTool.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("123456789123456789")]
         public string DiscordTagRoleID {
             get {
                 return ((string)(this["DiscordTagRoleID"]));

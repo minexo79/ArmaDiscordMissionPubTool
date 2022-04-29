@@ -30,15 +30,15 @@ https://discord.com/api/webhooks/<Webhook ID>/<Webhook Token>
 |-----|------|------|
 |DiscordWebhookID|WebHook ID，可在Webhook URL中找到。|Y|
 |DiscordWebhookToken|Webhook 權杖(驗證碼)，可在Webhook URL中找到。|Y|
-|DiscordTagRoleID|Discord 身分組ID|X|
 |ClanName|戰隊名稱。|Y|
 |ClanColor|任務資訊側邊條顯示顏色。|Y|
 |ClanPictureUrl|戰隊Logo圖片。|X|
+|DiscordTagRoleID|Discord 身分組ID，可用','隔開|X|
 ```xml
 <applicationSettings>
     <DiscordMissionPubTool.Properties.Settings>
         <setting name="DiscordWebhookID" serializeAs="String">
-            <value>12345678912345678912</value>
+            <value>123456789123456789</value>
         </setting>
         <setting name="ClanName" serializeAs="String">
             <value>黑貓戰術中隊</value>
@@ -50,10 +50,10 @@ https://discord.com/api/webhooks/<Webhook ID>/<Webhook Token>
             <value />
         </setting>
         <setting name="DiscordWebhookToken" serializeAs="String">
-            <value>123456789123456789121234567891234567891212345678912345678912123456789</value>
+            <value>123456789123456789123456789123456789123456789123456789123456789123456789</value>
         </setting>
         <setting name="DiscordTagRoleID" serializeAs="String">
-            <value />
+            <value>123456789123456789,123456789123456789</value>
         </setting>
     </DiscordMissionPubTool.Properties.Settings>
 </applicationSettings>
