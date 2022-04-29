@@ -90,9 +90,9 @@
             this.label4.Location = new System.Drawing.Point(9, 220);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(299, 17);
+            this.label4.Size = new System.Drawing.Size(276, 17);
             this.label4.TabIndex = 6;
-            this.label4.Text = "本軟體以啤酒軟體（Beerware）方式授權並釋出。";
+            this.label4.Text = "本軟體以 GPL-3.0 Licences 方式授權並釋出。";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label5
