@@ -38,6 +38,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.imgBlog = new System.Windows.Forms.PictureBox();
             this.imgGithub = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.imgBlog)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgGithub)).BeginInit();
             this.SuspendLayout();
@@ -99,7 +100,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label5.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label5.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.label5.Location = new System.Drawing.Point(9, 203);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
@@ -154,11 +155,25 @@
             this.imgGithub.TabStop = false;
             this.imgGithub.Click += new System.EventHandler(this.imgGithub_Click);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label8.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label8.Location = new System.Drawing.Point(9, 186);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(207, 17);
+            this.label8.TabIndex = 12;
+            this.label8.Text = "UI元件來源：Taiizor/ReaLTaiizor";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // AboutView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(445, 246);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.imgGithub);
             this.Controls.Add(this.imgBlog);
             this.Controls.Add(this.label7);
@@ -193,5 +208,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox imgBlog;
         private System.Windows.Forms.PictureBox imgGithub;
+        private System.Windows.Forms.Label label8;
     }
 }

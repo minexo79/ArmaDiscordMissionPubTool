@@ -60,3 +60,6 @@ https://discord.com/api/webhooks/<Webhook ID>/<Webhook Token>
 ```
 ## 授權
 本軟體以[GPL-3.0 Licences](https://www.gnu.org/licenses/gpl-3.0.en.html)方式授權並釋出。
+
+## 使用套件包
+- [Taiizor/ReaLTaiizor](https://github.com/Taiizor/ReaLTaiizor)
