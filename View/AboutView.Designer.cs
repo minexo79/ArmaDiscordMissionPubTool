@@ -79,9 +79,9 @@
             this.label3.Location = new System.Drawing.Point(8, 123);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(164, 19);
+            this.label3.Size = new System.Drawing.Size(168, 19);
             this.label3.TabIndex = 3;
-            this.label3.Text = "版本：V1.1(2022xxxx)";
+            this.label3.Text = "版本：V1.1(20220430)";
             // 
             // label4
             // 
