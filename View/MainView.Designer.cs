@@ -66,8 +66,9 @@
             this.tbModList = new ReaLTaiizor.Controls.DungeonTextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnRecord = new ReaLTaiizor.Controls.FoxButton();
+            this.btnSetting = new ReaLTaiizor.Controls.FoxButton();
             this.btnSavePublish = new ReaLTaiizor.Controls.FoxButton();
-            this.btnAbout = new ReaLTaiizor.Controls.FoxButton();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.tbMissionCall = new ReaLTaiizor.Controls.DungeonTextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -145,10 +146,10 @@
             this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Controls.Add(this.tabPage8);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(7, 309);
+            this.tabControl1.Location = new System.Drawing.Point(7, 308);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(450, 115);
+            this.tabControl1.Size = new System.Drawing.Size(450, 114);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl1.TabIndex = 10;
             // 
@@ -159,7 +160,7 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 26);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(442, 85);
+            this.tabPage7.Size = new System.Drawing.Size(442, 84);
             this.tabPage7.TabIndex = 0;
             this.tabPage7.Text = "我方資訊";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -177,7 +178,7 @@
             this.tbPlayer.Multiline = true;
             this.tbPlayer.Name = "tbPlayer";
             this.tbPlayer.ReadOnly = false;
-            this.tbPlayer.Size = new System.Drawing.Size(436, 79);
+            this.tbPlayer.Size = new System.Drawing.Size(436, 78);
             this.tbPlayer.TabIndex = 13;
             this.tbPlayer.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.tbPlayer.UseSystemPasswordChar = false;
@@ -189,7 +190,7 @@
             this.tabPage8.Location = new System.Drawing.Point(4, 26);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(442, 87);
+            this.tabPage8.Size = new System.Drawing.Size(442, 86);
             this.tabPage8.TabIndex = 1;
             this.tabPage8.Text = "敵方資訊";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -207,7 +208,7 @@
             this.tbEnemy.Multiline = true;
             this.tbEnemy.Name = "tbEnemy";
             this.tbEnemy.ReadOnly = false;
-            this.tbEnemy.Size = new System.Drawing.Size(436, 81);
+            this.tbEnemy.Size = new System.Drawing.Size(436, 80);
             this.tbEnemy.TabIndex = 14;
             this.tbEnemy.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.tbEnemy.UseSystemPasswordChar = false;
@@ -223,7 +224,7 @@
             this.tabControl2.Location = new System.Drawing.Point(7, 112);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(450, 115);
+            this.tabControl2.Size = new System.Drawing.Size(450, 114);
             this.tabControl2.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl2.TabIndex = 7;
             // 
@@ -234,7 +235,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 26);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(442, 85);
+            this.tabPage1.Size = new System.Drawing.Size(442, 84);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "任務服裝";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -252,7 +253,7 @@
             this.tbMissionCloth.Multiline = true;
             this.tbMissionCloth.Name = "tbMissionCloth";
             this.tbMissionCloth.ReadOnly = false;
-            this.tbMissionCloth.Size = new System.Drawing.Size(436, 79);
+            this.tbMissionCloth.Size = new System.Drawing.Size(436, 78);
             this.tbMissionCloth.TabIndex = 12;
             this.tbMissionCloth.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.tbMissionCloth.UseSystemPasswordChar = false;
@@ -264,7 +265,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 26);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(442, 87);
+            this.tabPage2.Size = new System.Drawing.Size(442, 86);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "武器限制";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -282,7 +283,7 @@
             this.tbMissionWeapon.Multiline = true;
             this.tbMissionWeapon.Name = "tbMissionWeapon";
             this.tbMissionWeapon.ReadOnly = false;
-            this.tbMissionWeapon.Size = new System.Drawing.Size(436, 81);
+            this.tbMissionWeapon.Size = new System.Drawing.Size(436, 80);
             this.tbMissionWeapon.TabIndex = 13;
             this.tbMissionWeapon.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.tbMissionWeapon.UseSystemPasswordChar = false;
@@ -294,7 +295,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 26);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(442, 87);
+            this.tabPage3.Size = new System.Drawing.Size(442, 86);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "任務補給";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -312,7 +313,7 @@
             this.tbMissionSupply.Multiline = true;
             this.tbMissionSupply.Name = "tbMissionSupply";
             this.tbMissionSupply.ReadOnly = false;
-            this.tbMissionSupply.Size = new System.Drawing.Size(436, 81);
+            this.tbMissionSupply.Size = new System.Drawing.Size(436, 80);
             this.tbMissionSupply.TabIndex = 14;
             this.tbMissionSupply.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.tbMissionSupply.UseSystemPasswordChar = false;
@@ -324,7 +325,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 26);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(442, 87);
+            this.tabPage4.Size = new System.Drawing.Size(442, 86);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "重生機制";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -342,7 +343,7 @@
             this.tbMissionRevive.Multiline = true;
             this.tbMissionRevive.Name = "tbMissionRevive";
             this.tbMissionRevive.ReadOnly = false;
-            this.tbMissionRevive.Size = new System.Drawing.Size(436, 81);
+            this.tbMissionRevive.Size = new System.Drawing.Size(436, 80);
             this.tbMissionRevive.TabIndex = 15;
             this.tbMissionRevive.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.tbMissionRevive.UseSystemPasswordChar = false;
@@ -445,7 +446,7 @@
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.AutoSize = true;
-            this.tableLayoutPanel3.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.tableLayoutPanel3.BackColor = System.Drawing.Color.LemonChiffon;
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -454,7 +455,7 @@
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel6, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.tbMissionMap, 1, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(7, 234);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(7, 233);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -620,7 +621,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(7, 428);
+            this.label7.Location = new System.Drawing.Point(7, 426);
             this.label7.Name = "label7";
             this.label7.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.label7.Size = new System.Drawing.Size(60, 23);
@@ -630,7 +631,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(7, 574);
+            this.label8.Location = new System.Drawing.Point(7, 571);
             this.label8.Name = "label8";
             this.label8.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.label8.Size = new System.Drawing.Size(34, 23);
@@ -648,7 +649,7 @@
             this.tableLayoutPanel4.Controls.Add(this.label9, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(7, 723);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(7, 719);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -689,19 +690,62 @@
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.AutoSize = true;
-            this.tableLayoutPanel5.ColumnCount = 2;
+            this.tableLayoutPanel5.ColumnCount = 3;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 86F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 86F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel5.Controls.Add(this.btnSavePublish, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.btnAbout, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.btnRecord, 2, 0);
+            this.tableLayoutPanel5.Controls.Add(this.btnSetting, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.btnSavePublish, 1, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(7, 764);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(7, 760);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(450, 50);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(450, 54);
             this.tableLayoutPanel5.TabIndex = 20;
+            // 
+            // btnRecord
+            // 
+            this.btnRecord.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.btnRecord.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(193)))), ((int)(((byte)(193)))));
+            this.btnRecord.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnRecord.DisabledBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.btnRecord.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(209)))), ((int)(((byte)(209)))));
+            this.btnRecord.DisabledTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(178)))), ((int)(((byte)(190)))));
+            this.btnRecord.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnRecord.DownColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this.btnRecord.Enabled = false;
+            this.btnRecord.EnabledCalc = false;
+            this.btnRecord.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnRecord.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.btnRecord.Location = new System.Drawing.Point(367, 3);
+            this.btnRecord.Name = "btnRecord";
+            this.btnRecord.OverColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.btnRecord.Size = new System.Drawing.Size(80, 48);
+            this.btnRecord.TabIndex = 24;
+            this.btnRecord.Text = "歷史";
+            // 
+            // btnSetting
+            // 
+            this.btnSetting.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.btnSetting.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(193)))), ((int)(((byte)(193)))));
+            this.btnSetting.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSetting.DisabledBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.btnSetting.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(209)))), ((int)(((byte)(209)))));
+            this.btnSetting.DisabledTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(178)))), ((int)(((byte)(190)))));
+            this.btnSetting.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSetting.DownColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this.btnSetting.EnabledCalc = true;
+            this.btnSetting.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnSetting.ForeColor = System.Drawing.Color.Olive;
+            this.btnSetting.Location = new System.Drawing.Point(3, 3);
+            this.btnSetting.Name = "btnSetting";
+            this.btnSetting.OverColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.btnSetting.Size = new System.Drawing.Size(80, 48);
+            this.btnSetting.TabIndex = 4;
+            this.btnSetting.Text = "設定";
+            this.btnSetting.Click += new ReaLTaiizor.Util.FoxBase.ButtonFoxBase.ClickEventHandler(this.btnSetting_Click);
             // 
             // btnSavePublish
             // 
@@ -716,34 +760,13 @@
             this.btnSavePublish.EnabledCalc = true;
             this.btnSavePublish.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnSavePublish.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnSavePublish.Location = new System.Drawing.Point(3, 3);
+            this.btnSavePublish.Location = new System.Drawing.Point(89, 3);
             this.btnSavePublish.Name = "btnSavePublish";
             this.btnSavePublish.OverColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.btnSavePublish.Size = new System.Drawing.Size(358, 44);
+            this.btnSavePublish.Size = new System.Drawing.Size(272, 48);
             this.btnSavePublish.TabIndex = 2;
             this.btnSavePublish.Text = "點我發布！";
             this.btnSavePublish.Click += new ReaLTaiizor.Util.FoxBase.ButtonFoxBase.ClickEventHandler(this.btnPublish_Click);
-            // 
-            // btnAbout
-            // 
-            this.btnAbout.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.btnAbout.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(193)))), ((int)(((byte)(193)))));
-            this.btnAbout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAbout.DisabledBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.btnAbout.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(209)))), ((int)(((byte)(209)))));
-            this.btnAbout.DisabledTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(178)))), ((int)(((byte)(190)))));
-            this.btnAbout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAbout.DownColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
-            this.btnAbout.EnabledCalc = true;
-            this.btnAbout.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnAbout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnAbout.Location = new System.Drawing.Point(367, 3);
-            this.btnAbout.Name = "btnAbout";
-            this.btnAbout.OverColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.btnAbout.Size = new System.Drawing.Size(80, 44);
-            this.btnAbout.TabIndex = 3;
-            this.btnAbout.Text = "關於";
-            this.btnAbout.Click += new ReaLTaiizor.Util.FoxBase.ButtonFoxBase.ClickEventHandler(this.btnAbout_Click);
             // 
             // tableLayoutPanel7
             // 
@@ -799,12 +822,12 @@
             this.tbTarget.EdgeColor = System.Drawing.Color.White;
             this.tbTarget.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbTarget.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbTarget.Location = new System.Drawing.Point(7, 455);
+            this.tbTarget.Location = new System.Drawing.Point(7, 453);
             this.tbTarget.MaxLength = 32767;
             this.tbTarget.Multiline = true;
             this.tbTarget.Name = "tbTarget";
             this.tbTarget.ReadOnly = false;
-            this.tbTarget.Size = new System.Drawing.Size(450, 115);
+            this.tbTarget.Size = new System.Drawing.Size(450, 114);
             this.tbTarget.TabIndex = 22;
             this.tbTarget.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.tbTarget.UseSystemPasswordChar = false;
@@ -818,12 +841,12 @@
             this.tbCommit.EdgeColor = System.Drawing.Color.White;
             this.tbCommit.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbCommit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbCommit.Location = new System.Drawing.Point(7, 601);
+            this.tbCommit.Location = new System.Drawing.Point(7, 598);
             this.tbCommit.MaxLength = 32767;
             this.tbCommit.Multiline = true;
             this.tbCommit.Name = "tbCommit";
             this.tbCommit.ReadOnly = false;
-            this.tbCommit.Size = new System.Drawing.Size(450, 115);
+            this.tbCommit.Size = new System.Drawing.Size(450, 114);
             this.tbCommit.TabIndex = 23;
             this.tbCommit.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.tbCommit.UseSystemPasswordChar = false;
@@ -884,22 +907,12 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private ReaLTaiizor.Controls.FoxButton btnSavePublish;
-        private ReaLTaiizor.Controls.FoxButton btnAbout;
         private ReaLTaiizor.Controls.PoisonDateTime dpDate;
         private ReaLTaiizor.Controls.DungeonTextBox tbStartTime;
         private ReaLTaiizor.Controls.DungeonTextBox tbReadyTime;
-        private System.Windows.Forms.TabControl tabControl2;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private ReaLTaiizor.Controls.DungeonTextBox tbMissionCall;
         private System.Windows.Forms.Label label4;
-        private ReaLTaiizor.Controls.DungeonTextBox tbMissionCloth;
-        private ReaLTaiizor.Controls.DungeonTextBox tbMissionWeapon;
-        private ReaLTaiizor.Controls.DungeonTextBox tbMissionSupply;
-        private ReaLTaiizor.Controls.DungeonTextBox tbMissionRevive;
         private System.Windows.Forms.Label label6;
         private ReaLTaiizor.Controls.DungeonTextBox tbMissionMap;
         private ReaLTaiizor.Controls.DungeonTextBox tbPlayer;
@@ -914,6 +927,17 @@
         private ReaLTaiizor.Controls.RibbonRadioButton rbAfternnon;
         private ReaLTaiizor.Controls.RibbonRadioButton rbDay;
         private ReaLTaiizor.Controls.RibbonRadioButton rbMorning;
+        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.TabPage tabPage1;
+        private ReaLTaiizor.Controls.DungeonTextBox tbMissionCloth;
+        private System.Windows.Forms.TabPage tabPage2;
+        private ReaLTaiizor.Controls.DungeonTextBox tbMissionWeapon;
+        private System.Windows.Forms.TabPage tabPage3;
+        private ReaLTaiizor.Controls.DungeonTextBox tbMissionSupply;
+        private System.Windows.Forms.TabPage tabPage4;
+        private ReaLTaiizor.Controls.DungeonTextBox tbMissionRevive;
+        private ReaLTaiizor.Controls.FoxButton btnSetting;
+        private ReaLTaiizor.Controls.FoxButton btnRecord;
     }
 }
 

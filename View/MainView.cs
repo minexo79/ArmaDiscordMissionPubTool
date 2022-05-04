@@ -19,18 +19,29 @@ namespace DiscordMissionPubTool
     public partial class MainView : Form
     {
         ClanModel clanModel     = new ClanModel();
-        string webhookID        = Properties.Settings.Default.DiscordWebhookID;
-        string webhookToken     = Properties.Settings.Default.DiscordWebhookToken;
-        string clanName         = Properties.Settings.Default.ClanName;
-        string clanColor        = Properties.Settings.Default.ClanColor;
-        string clanPictureUrl   = Properties.Settings.Default.ClanPictureUrl;
-        string discordTagroleID = Properties.Settings.Default.DiscordTagRoleID;
+
+        static string webhookUrl;
+        static string clanName;
+        static string clanColor;
+        static string clanPictureUrl;
+        static string discordTagroleID;
 
         public MainView()
         {
             InitializeComponent();
 
             dpDate.Value = DateTime.Now;
+
+            reloadProperties();
+        }
+
+        public static void reloadProperties()
+        {
+            webhookUrl = Properties.Settings.Default.DiscordWebhookUrl;
+            clanName = Properties.Settings.Default.ClanName;
+            clanColor = Properties.Settings.Default.ClanColor;
+            clanPictureUrl = Properties.Settings.Default.ClanPictureUrl;
+            discordTagroleID = Properties.Settings.Default.DiscordTagRoleID;
         }
 
         private void MainFormControl_ValueChanged(object sender, EventArgs e)
@@ -51,8 +62,7 @@ namespace DiscordMissionPubTool
             else
             {
                 HttpStatusCode statusCode = new DiscordWebhookManager().Push(ref clanModel,
-                                                                                webhookID,
-                                                                                webhookToken,
+                                                                                webhookUrl,
                                                                                 clanName,
                                                                                 clanColor,
                                                                                 clanPictureUrl,
@@ -73,9 +83,9 @@ namespace DiscordMissionPubTool
             btnSavePublish.Enabled = true;
         }
 
-        private void btnAbout_Click(object sender, EventArgs e)
+        private void btnSetting_Click(object sender, EventArgs e)
         {
-            new AboutView("關於").Show();
+            new SettingView().Show();
         }
     }
 }
