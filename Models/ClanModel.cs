@@ -9,6 +9,7 @@ namespace DiscordMissionPubTool.Models
     public class ClanModel
     {
         public DateTime ClanMissionDate { get; set; }
+        public string ClanMissionAuthor { get; set; }
         public string ClanMissionReadyTime { get; set; }
         public string ClanMissionStartTime { get; set; }
         public string ClanMissionCall { get; set; }

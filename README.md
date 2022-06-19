@@ -1,9 +1,10 @@
 ﻿# DiscordMissionPubTool
 Arma Discord 戰隊任務發佈工具<br>
+[TOC]
 
 ![](img/00.png)
 ---
-## 使用教學
+# 使用教學
 1. 點選頻道旁邊的齒輪，進入設定頁面。
 
 ![](img/01.png)
@@ -20,46 +21,20 @@ Arma Discord 戰隊任務發佈工具<br>
 
 ![](img/04.png)
 
-複製的網址會像這樣子：<br>
-```
-https://discord.com/api/webhooks/<Webhook ID>/<Webhook Token>
-```
-5. 打開`DiscordMissionPubTool.exe.config`，根據下方表格及範例，填入對應的資訊：
+5.點選設定按鈕，根據下方表格及範例，填入對應的資訊：
 
 | 欄位 | 用途 | 必填? |
 |-----|------|------|
-|DiscordWebhookID|WebHook ID，可在Webhook URL中找到。|Y|
-|DiscordWebhookToken|Webhook 權杖(驗證碼)，可在Webhook URL中找到。|Y|
-|ClanName|戰隊名稱。|Y|
-|ClanColor|任務資訊側邊條顯示顏色。|Y|
-|ClanPictureUrl|戰隊Logo圖片。|X|
-|DiscordTagRoleID|Discord 身分組ID，可用','隔開|X|
-```xml
-<applicationSettings>
-    <DiscordMissionPubTool.Properties.Settings>
-        <setting name="DiscordWebhookID" serializeAs="String">
-            <value>123456789123456789</value>
-        </setting>
-        <setting name="ClanName" serializeAs="String">
-            <value>黑貓戰術中隊</value>
-        </setting>
-        <setting name="ClanColor" serializeAs="String">
-            <value>002054</value>
-        </setting>
-        <setting name="ClanPictureUrl" serializeAs="String">
-            <value />
-        </setting>
-        <setting name="DiscordWebhookToken" serializeAs="String">
-            <value>123456789123456789123456789123456789123456789123456789123456789123456789</value>
-        </setting>
-        <setting name="DiscordTagRoleID" serializeAs="String">
-            <value>123456789123456789,123456789123456789</value>
-        </setting>
-    </DiscordMissionPubTool.Properties.Settings>
-</applicationSettings>
-```
-## 授權
+|戰隊名稱|戰隊名稱。|Y|
+|戰隊顏色|任務資訊側邊條顯示顏色。|Y|
+|戰隊Logo網址|戰隊Logo圖片網址。|X|
+|Webhook URL|Discord WebHook URL，直接複製貼上即可。|Y|
+|身分組ID|Discord 身分組ID，可用','隔開|X|
+
+![](img/05.png)
+
+# 授權
 本軟體以[GPL-3.0 Licences](https://www.gnu.org/licenses/gpl-3.0.en.html)方式授權並釋出。
 
-## 使用套件包
+# 使用套件包
 - [Taiizor/ReaLTaiizor](https://github.com/Taiizor/ReaLTaiizor)

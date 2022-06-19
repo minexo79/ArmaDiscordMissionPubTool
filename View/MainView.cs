@@ -18,7 +18,7 @@ namespace DiscordMissionPubTool
 {
     public partial class MainView : Form
     {
-        ClanModel clanModel     = new ClanModel();
+        static ClanModel clanModel = new ClanModel();
 
         static string webhookUrl;
         static string clanName;
@@ -37,11 +37,11 @@ namespace DiscordMissionPubTool
 
         public static void reloadProperties()
         {
-            webhookUrl = Properties.Settings.Default.DiscordWebhookUrl;
-            clanName = Properties.Settings.Default.ClanName;
-            clanColor = Properties.Settings.Default.ClanColor;
-            clanPictureUrl = Properties.Settings.Default.ClanPictureUrl;
-            discordTagroleID = Properties.Settings.Default.DiscordTagRoleID;
+            webhookUrl          = Properties.Settings.Default.DiscordWebhookUrl;
+            clanName            = Properties.Settings.Default.ClanName;
+            clanColor           = Properties.Settings.Default.ClanColor;
+            clanPictureUrl      = Properties.Settings.Default.ClanPictureUrl;
+            discordTagroleID    = Properties.Settings.Default.DiscordTagRoleID;
         }
 
         private void MainFormControl_ValueChanged(object sender, EventArgs e)
@@ -51,7 +51,7 @@ namespace DiscordMissionPubTool
 
         private void btnPublish_Click(object sender, EventArgs e)
         {
-            btnSavePublish.Enabled = false;
+            btnSavePublish.Enabled = false; 
 
             string warning = InputBoxCheckManager.InputBoxEmptyCheck(ref clanModel);
 
@@ -86,6 +86,11 @@ namespace DiscordMissionPubTool
         private void btnSetting_Click(object sender, EventArgs e)
         {
             new SettingView().Show();
+        }
+
+        private void btnPullMessage_Click(object sender, EventArgs e)
+        {
+            new PullView(webhookUrl).Show();
         }
     }
 }

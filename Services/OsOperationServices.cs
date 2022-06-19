@@ -29,6 +29,10 @@ namespace DiscordMissionPubTool.Services
                     clanModel.ClanMissionStartTime = ((DungeonTextBox)sender).Text;
                     break;
 
+                case "tbMissionAuthor":
+                    clanModel.ClanMissionAuthor = ((DungeonTextBox)sender).Text;
+                    break;
+
                 case "tbMissionCall":
                     clanModel.ClanMissionCall = ((DungeonTextBox)sender).Text;
                     break;

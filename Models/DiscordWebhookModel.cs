@@ -79,7 +79,7 @@ namespace DiscordMissionPubTool.Models
 
             this.embeds[0].color = Int32.Parse(clanColor, NumberStyles.HexNumber);
 
-            this.embeds[0].author.name = clanName + "任務";
+            this.embeds[0].author.name = "任務作者：" + model.ClanMissionAuthor;
 
             this.embeds[0].thumbnail.url = (!String.IsNullOrEmpty(clanPictureUrl)) ? clanPictureUrl : "";
 

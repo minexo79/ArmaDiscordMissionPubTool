@@ -74,7 +74,7 @@
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(449, 288);
+            this.tabControl1.Size = new System.Drawing.Size(449, 286);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -85,18 +85,17 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 31);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(441, 253);
+            this.tabPage1.Size = new System.Drawing.Size(441, 251);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "參數";
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.White;
-            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 86F));
-            this.tableLayoutPanel1.Controls.Add(this.btnSave, 2, 5);
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Controls.Add(this.label9, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label10, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label11, 0, 2);
@@ -107,6 +106,7 @@
             this.tableLayoutPanel1.Controls.Add(this.tbWebhookUrl, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.label14, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.tbRoleID, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.btnSave, 1, 5);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -117,7 +117,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(435, 247);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(435, 245);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // btnSave
@@ -128,15 +128,15 @@
             this.btnSave.DisabledBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.btnSave.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(209)))), ((int)(((byte)(209)))));
             this.btnSave.DisabledTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(178)))), ((int)(((byte)(190)))));
-            this.btnSave.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSave.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnSave.DownColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
             this.btnSave.EnabledCalc = true;
             this.btnSave.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnSave.Location = new System.Drawing.Point(352, 208);
+            this.btnSave.Location = new System.Drawing.Point(352, 203);
             this.btnSave.Name = "btnSave";
             this.btnSave.OverColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.btnSave.Size = new System.Drawing.Size(80, 36);
+            this.btnSave.Size = new System.Drawing.Size(80, 39);
             this.btnSave.TabIndex = 1;
             this.btnSave.Text = "儲存";
             this.btnSave.Click += new ReaLTaiizor.Util.FoxBase.ButtonFoxBase.ClickEventHandler(this.btnSave_Click);
@@ -148,46 +148,42 @@
             this.label9.Location = new System.Drawing.Point(3, 6);
             this.label9.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(102, 35);
+            this.label9.Size = new System.Drawing.Size(102, 34);
             this.label9.TabIndex = 0;
             this.label9.Text = "戰隊名稱(*)";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label10.Location = new System.Drawing.Point(3, 47);
+            this.label10.Location = new System.Drawing.Point(3, 46);
             this.label10.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(102, 35);
+            this.label10.Size = new System.Drawing.Size(102, 34);
             this.label10.TabIndex = 1;
             this.label10.Text = "戰隊顏色(*)";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Location = new System.Drawing.Point(3, 88);
+            this.label11.Location = new System.Drawing.Point(3, 86);
             this.label11.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(102, 35);
+            this.label11.Size = new System.Drawing.Size(102, 34);
             this.label11.TabIndex = 2;
             this.label11.Text = "戰隊Logo網址";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.Location = new System.Drawing.Point(3, 129);
+            this.label12.Location = new System.Drawing.Point(3, 126);
             this.label12.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(102, 35);
+            this.label12.Size = new System.Drawing.Size(102, 34);
             this.label12.TabIndex = 3;
             this.label12.Text = "Webhook Url(*)";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // tbName
             // 
@@ -202,7 +198,7 @@
             this.tbName.Multiline = false;
             this.tbName.Name = "tbName";
             this.tbName.ReadOnly = false;
-            this.tbName.Size = new System.Drawing.Size(235, 28);
+            this.tbName.Size = new System.Drawing.Size(321, 28);
             this.tbName.TabIndex = 6;
             this.tbName.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.tbName.UseSystemPasswordChar = false;
@@ -215,12 +211,12 @@
             this.tbColor.EdgeColor = System.Drawing.Color.White;
             this.tbColor.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.tbColor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbColor.Location = new System.Drawing.Point(111, 44);
+            this.tbColor.Location = new System.Drawing.Point(111, 43);
             this.tbColor.MaxLength = 32767;
             this.tbColor.Multiline = false;
             this.tbColor.Name = "tbColor";
             this.tbColor.ReadOnly = false;
-            this.tbColor.Size = new System.Drawing.Size(235, 28);
+            this.tbColor.Size = new System.Drawing.Size(321, 28);
             this.tbColor.TabIndex = 7;
             this.tbColor.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.tbColor.UseSystemPasswordChar = false;
@@ -233,12 +229,12 @@
             this.tbLogo.EdgeColor = System.Drawing.Color.White;
             this.tbLogo.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.tbLogo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbLogo.Location = new System.Drawing.Point(111, 85);
+            this.tbLogo.Location = new System.Drawing.Point(111, 83);
             this.tbLogo.MaxLength = 32767;
             this.tbLogo.Multiline = false;
             this.tbLogo.Name = "tbLogo";
             this.tbLogo.ReadOnly = false;
-            this.tbLogo.Size = new System.Drawing.Size(235, 28);
+            this.tbLogo.Size = new System.Drawing.Size(321, 28);
             this.tbLogo.TabIndex = 8;
             this.tbLogo.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.tbLogo.UseSystemPasswordChar = false;
@@ -251,12 +247,12 @@
             this.tbWebhookUrl.EdgeColor = System.Drawing.Color.White;
             this.tbWebhookUrl.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.tbWebhookUrl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbWebhookUrl.Location = new System.Drawing.Point(111, 126);
+            this.tbWebhookUrl.Location = new System.Drawing.Point(111, 123);
             this.tbWebhookUrl.MaxLength = 32767;
             this.tbWebhookUrl.Multiline = false;
             this.tbWebhookUrl.Name = "tbWebhookUrl";
             this.tbWebhookUrl.ReadOnly = false;
-            this.tbWebhookUrl.Size = new System.Drawing.Size(235, 28);
+            this.tbWebhookUrl.Size = new System.Drawing.Size(321, 28);
             this.tbWebhookUrl.TabIndex = 9;
             this.tbWebhookUrl.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.tbWebhookUrl.UseSystemPasswordChar = false;
@@ -265,13 +261,12 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label14.Location = new System.Drawing.Point(3, 170);
+            this.label14.Location = new System.Drawing.Point(3, 166);
             this.label14.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(102, 35);
+            this.label14.Size = new System.Drawing.Size(102, 34);
             this.label14.TabIndex = 5;
             this.label14.Text = "身分組ID";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // tbRoleID
             // 
@@ -281,12 +276,12 @@
             this.tbRoleID.EdgeColor = System.Drawing.Color.White;
             this.tbRoleID.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.tbRoleID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbRoleID.Location = new System.Drawing.Point(111, 167);
+            this.tbRoleID.Location = new System.Drawing.Point(111, 163);
             this.tbRoleID.MaxLength = 32767;
             this.tbRoleID.Multiline = false;
             this.tbRoleID.Name = "tbRoleID";
             this.tbRoleID.ReadOnly = false;
-            this.tbRoleID.Size = new System.Drawing.Size(235, 28);
+            this.tbRoleID.Size = new System.Drawing.Size(321, 28);
             this.tbRoleID.TabIndex = 11;
             this.tbRoleID.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.tbRoleID.UseSystemPasswordChar = false;
@@ -307,7 +302,7 @@
             this.tabPage2.ImageIndex = 1;
             this.tabPage2.Location = new System.Drawing.Point(4, 31);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(441, 253);
+            this.tabPage2.Size = new System.Drawing.Size(441, 251);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "關於";
             // 
@@ -328,7 +323,7 @@
             // 
             this.imgGithub.BackgroundImage = global::DiscordMissionPubTool.Properties.Resources.github;
             this.imgGithub.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.imgGithub.Location = new System.Drawing.Point(320, 140);
+            this.imgGithub.Location = new System.Drawing.Point(320, 136);
             this.imgGithub.Name = "imgGithub";
             this.imgGithub.Size = new System.Drawing.Size(113, 105);
             this.imgGithub.TabIndex = 21;
@@ -447,7 +442,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(449, 288);
+            this.ClientSize = new System.Drawing.Size(449, 286);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

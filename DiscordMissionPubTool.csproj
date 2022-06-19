@@ -120,6 +120,12 @@
     <Compile Include="View\NotifyView.Designer.cs">
       <DependentUpon>NotifyView.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\PullView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PullView.Designer.cs">
+      <DependentUpon>PullView.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\SettingView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +147,9 @@
     </Compile>
     <EmbeddedResource Include="View\NotifyView.resx">
       <DependentUpon>NotifyView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PullView.resx">
+      <DependentUpon>PullView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\SettingView.resx">
       <DependentUpon>SettingView.cs</DependentUpon>
