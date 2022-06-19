@@ -1,6 +1,5 @@
 ﻿# DiscordMissionPubTool
 Arma Discord 戰隊任務發佈工具<br>
-[TOC]
 
 ![](img/00.png)
 ---
