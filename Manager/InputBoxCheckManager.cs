@@ -14,6 +14,8 @@ namespace DiscordMissionPubTool.Manager
             // package empty message
             string warning = "";
 
+            if (String.IsNullOrEmpty(clanModel.ClanMissionAuthor))
+                warning += "．任務作者\n";
             if (String.IsNullOrEmpty(clanModel.ClanMissionReadyTime))
                 warning += "．整裝時間\n";
             if (String.IsNullOrEmpty(clanModel.ClanMissionStartTime))

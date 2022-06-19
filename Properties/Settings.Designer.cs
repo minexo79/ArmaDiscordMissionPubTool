@@ -23,57 +23,64 @@ namespace DiscordMissionPubTool.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("123456789123456789")]
-        public string DiscordWebhookID {
-            get {
-                return ((string)(this["DiscordWebhookID"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("黑貓戰術中隊")]
         public string ClanName {
             get {
                 return ((string)(this["ClanName"]));
             }
+            set {
+                this["ClanName"] = value;
+            }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("002054")]
         public string ClanColor {
             get {
                 return ((string)(this["ClanColor"]));
             }
+            set {
+                this["ClanColor"] = value;
+            }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string ClanPictureUrl {
             get {
                 return ((string)(this["ClanPictureUrl"]));
             }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("123456789123456789123456789123456789123456789123456789123456789123456789")]
-        public string DiscordWebhookToken {
-            get {
-                return ((string)(this["DiscordWebhookToken"]));
+            set {
+                this["ClanPictureUrl"] = value;
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://discord.com/api/webhooks/123456789123456789/12345678912345678912345678912" +
+            "3456789123456789123456789123456789123456789")]
+        public string DiscordWebhookUrl {
+            get {
+                return ((string)(this["DiscordWebhookUrl"]));
+            }
+            set {
+                this["DiscordWebhookUrl"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("123456789123456789")]
         public string DiscordTagRoleID {
             get {
                 return ((string)(this["DiscordTagRoleID"]));
+            }
+            set {
+                this["DiscordTagRoleID"] = value;
             }
         }
     }

@@ -14,26 +14,9 @@ namespace DiscordMissionPubTool
         [STAThread]
         static void Main()
         {
-            Boolean warnMsg = false;
-
-            if (String.IsNullOrEmpty(Properties.Settings.Default.DiscordWebhookID))
-                warnMsg = true;
-            if (String.IsNullOrEmpty(Properties.Settings.Default.DiscordWebhookToken))
-                warnMsg = true;
-            if (String.IsNullOrEmpty(Properties.Settings.Default.ClanName))
-                warnMsg = true;
-
-            if (warnMsg)
-            {
-                MessageBox.Show("設定檔內必要填入的的值為空，請檢查是否填入！",
-                    "Notice!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else
-            {
-                Application.EnableVisualStyles();
-                Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new MainView());
-            }
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new MainView());
         }
     }
 }

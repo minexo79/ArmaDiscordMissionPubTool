@@ -12,23 +12,31 @@ namespace DiscordMissionPubTool.Services
 {
     public class DiscordWebhookServices
     {
-        public int Get()
-        {
-            return 0;
-        }
-        public HttpStatusCode Push(DiscordWebhookModel webhookBody, string webhookID, string webhookToken)
+        public HttpContent Get(string webhookUrl, string MessageID)
         {
             using (HttpClient client = new HttpClient())
             {
+                client.BaseAddress = new Uri(webhookUrl + "/messages/" + MessageID);
 
+                HttpResponseMessage responseMessage =
+                                    client.GetAsync("").GetAwaiter().GetResult();
+
+                return responseMessage.Content;
+            }
+        }
+
+        public HttpStatusCode Push(DiscordWebhookModel webhookBody, string webhookUrl)
+        {
+            using (HttpClient client = new HttpClient())
+            {
                 string body = JsonSerializer.Serialize(webhookBody);
 
-                client.BaseAddress = new Uri("https://discord.com/api/webhooks/");
+                client.BaseAddress = new Uri(webhookUrl);
 
                 StringContent content = new StringContent(body, Encoding.UTF8, "application/json");
 
                 HttpResponseMessage responseMessage =
-                    client.PostAsync($"{webhookID}/{webhookToken}", content).GetAwaiter().GetResult();
+                    client.PostAsync("", content).GetAwaiter().GetResult();
 
                 return responseMessage.StatusCode;
             }

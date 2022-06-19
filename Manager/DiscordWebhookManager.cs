@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using DiscordMissionPubTool.Models;
@@ -16,16 +17,16 @@ namespace DiscordMissionPubTool.Manager
             return new DiscordWebhookModel(ref clanModel, clanName, clanColor, clanPictureUrl, TagRoleID);
         }
 
-        public int Get()
+        public HttpContent Get(string WebhookUrl, string MessageID)
         {
-            return new DiscordWebhookServices().Get();
+            return new DiscordWebhookServices().Get(WebhookUrl, MessageID);
         }
 
-        public HttpStatusCode Push(ref ClanModel clanModel, string WebhookID, string WebhookToken, string clanName, string clanColor, string clanPictureUrl, string TagRoleID)
+        public HttpStatusCode Push(ref ClanModel clanModel, string WebhookUrl, string clanName, string clanColor, string clanPictureUrl, string TagRoleID)
         {
             DiscordWebhookModel webhookBodyPayload = PackageBodyPayload(ref clanModel, clanName, clanColor, clanPictureUrl, TagRoleID);
 
-            return new DiscordWebhookServices().Push(webhookBodyPayload, WebhookID, WebhookToken);
+            return new DiscordWebhookServices().Push(webhookBodyPayload, WebhookUrl);
         }
     }
 }
