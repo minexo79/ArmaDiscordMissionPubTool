@@ -30,11 +30,12 @@ namespace DiscordMissionPubTool
 
         private void SettingView_Load(object sender, EventArgs e)
         {
-            tbName.Text         = Properties.Settings.Default.ClanName;
-            tbColor.Text        = Properties.Settings.Default.ClanColor;
-            tbLogo.Text         = Properties.Settings.Default.ClanPictureUrl;
-            tbWebhookUrl.Text    = Properties.Settings.Default.DiscordWebhookUrl;
-            tbRoleID.Text       = Properties.Settings.Default.DiscordTagRoleID;
+            tbName.Text             = Properties.Settings.Default.ClanName;
+            tbColor.Text            = Properties.Settings.Default.ClanColor;
+            tbLogo.Text             = Properties.Settings.Default.ClanPictureUrl;
+            tbWebhookUrl.Text       = Properties.Settings.Default.DiscordWebhookUrl;
+            tbRoleID.Text           = Properties.Settings.Default.DiscordTagRoleID;
+            tbMissionAuthor.Text    = Properties.Settings.Default.MissionAuthor;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -44,6 +45,7 @@ namespace DiscordMissionPubTool
             Properties.Settings.Default.ClanPictureUrl      = tbLogo.Text;
             Properties.Settings.Default.DiscordWebhookUrl   = tbWebhookUrl.Text;
             Properties.Settings.Default.DiscordTagRoleID    = tbRoleID.Text;
+            Properties.Settings.Default.ClanName            = tbMissionAuthor.Text;
 
             Properties.Settings.Default.Save();
             MainView.reloadProperties();

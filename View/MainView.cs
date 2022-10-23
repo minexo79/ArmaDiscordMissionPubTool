@@ -21,6 +21,7 @@ namespace DiscordMissionPubTool
         static ClanModel clanModel = new ClanModel();
 
         static string webhookUrl;
+        static string missionAuthor;
         static string clanName;
         static string clanColor;
         static string clanPictureUrl;
@@ -38,6 +39,7 @@ namespace DiscordMissionPubTool
         public static void reloadProperties()
         {
             webhookUrl          = Properties.Settings.Default.DiscordWebhookUrl;
+            missionAuthor       = Properties.Settings.Default.ClanAuthor;
             clanName            = Properties.Settings.Default.ClanName;
             clanColor           = Properties.Settings.Default.ClanColor;
             clanPictureUrl      = Properties.Settings.Default.ClanPictureUrl;
@@ -66,7 +68,8 @@ namespace DiscordMissionPubTool
                                                                                 clanName,
                                                                                 clanColor,
                                                                                 clanPictureUrl,
-                                                                                discordTagroleID);
+                                                                                discordTagroleID,
+                                                                                missionAuthor);
                 
                 if (statusCode == HttpStatusCode.NoContent || statusCode == HttpStatusCode.OK)
                 {

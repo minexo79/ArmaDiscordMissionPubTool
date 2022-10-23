@@ -102,7 +102,9 @@
     <Compile Include="Manager\DiscordWebhookManager.cs" />
     <Compile Include="Manager\InputBoxCheckManager.cs" />
     <Compile Include="Manager\OsOperationManager.cs" />
+    <Compile Include="Models\DiscordWebhookReturnModel.cs" />
     <Compile Include="Services\DiscordWebhookServices.cs" />
+    <Compile Include="Services\ModelOperationServices.cs" />
     <Compile Include="Services\OsOperationServices.cs" />
     <Compile Include="View\MainView.cs">
       <SubType>Form</SubType>

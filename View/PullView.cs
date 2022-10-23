@@ -1,4 +1,6 @@
 ﻿using DiscordMissionPubTool.Manager;
+using System.Text.Json;
+using System.Dynamic;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,6 +11,8 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DiscordMissionPubTool.Models;
+using System.Text.Json.Serialization;
 
 namespace DiscordMissionPubTool
 {
@@ -31,7 +35,7 @@ namespace DiscordMissionPubTool
 
             string readString = content.ReadAsStringAsync().GetAwaiter().GetResult();
 
-            new NotifyView("提示", readString).Show();
+            DiscordWebhookReturnModel model = JsonSerializer.Deserialize<DiscordWebhookReturnModel>(readString);
 
             btnOK.Enabled = true;
         }

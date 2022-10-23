@@ -17,5 +17,11 @@
     <Setting Name="DiscordTagRoleID" Type="System.String" Scope="User">
       <Value Profile="(Default)">123456789123456789</Value>
     </Setting>
+    <Setting Name="ClanAuthor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">黑貓</Value>
+    </Setting>
+    <Setting Name="MissionAuthor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">黑貓</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

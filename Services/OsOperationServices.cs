@@ -14,7 +14,7 @@ namespace DiscordMissionPubTool.Services
         public static void PackageClanModel(ref ClanModel clanModel, ref Object sender)
         {
             string controlName = ((Control)sender).Name;
-
+             
             switch (controlName)
             {
                 case "dpDate":
@@ -27,10 +27,6 @@ namespace DiscordMissionPubTool.Services
 
                 case "tbStartTime":
                     clanModel.ClanMissionStartTime = ((DungeonTextBox)sender).Text;
-                    break;
-
-                case "tbMissionAuthor":
-                    clanModel.ClanMissionAuthor = ((DungeonTextBox)sender).Text;
                     break;
 
                 case "tbMissionCall":
@@ -85,6 +81,7 @@ namespace DiscordMissionPubTool.Services
                     break;
             }
         }
+
 
         public static void OpenBrowser(string Url)
         {

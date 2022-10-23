@@ -50,7 +50,12 @@ namespace DiscordMissionPubTool.Models
         public string content { get; set; }
         public Embed[] embeds { get; set; }
 
-        public DiscordWebhookModel(ref ClanModel model, string clanName, string clanColor, string clanPictureUrl, string roleID)
+        public DiscordWebhookModel(ref ClanModel model,
+                                        string clanName,
+                                        string clanColor,
+                                        string clanPictureUrl,
+                                        string roleID,
+                                        string missionAuthor)
         {
             this.username = "任務發佈";
 
@@ -79,7 +84,10 @@ namespace DiscordMissionPubTool.Models
 
             this.embeds[0].color = Int32.Parse(clanColor, NumberStyles.HexNumber);
 
-            this.embeds[0].author.name = "任務作者：" + model.ClanMissionAuthor;
+            if (!String.IsNullOrEmpty(missionAuthor))
+            {
+                this.embeds[0].author.name = "任務作者：" + missionAuthor;
+            }
 
             this.embeds[0].thumbnail.url = (!String.IsNullOrEmpty(clanPictureUrl)) ? clanPictureUrl : "";
 
@@ -122,13 +130,6 @@ namespace DiscordMissionPubTool.Models
 
             this.embeds[0].fields.Add(new Fields()
             {
-                name = "任務補給",
-                value = model.ClanMissionSupply,
-                inline = false
-            });
-
-            this.embeds[0].fields.Add(new Fields()
-            {
                 name = "重生機制",
                 value = model.ClanMissionRevive,
                 inline = false
@@ -139,13 +140,6 @@ namespace DiscordMissionPubTool.Models
                 name = "作戰時間",
                 value = model.ClanMissionTime,
                 inline = true
-            });
-
-            this.embeds[0].fields.Add(new Fields()
-            {
-                name = "任務地圖",
-                value = model.ClanMissionMap,
-                inline = false
             });
 
             this.embeds[0].fields.Add(new Fields()
@@ -169,6 +163,26 @@ namespace DiscordMissionPubTool.Models
                 inline = false
             });
 
+            if (!String.IsNullOrEmpty(model.ClanMissionMap))
+            {
+                this.embeds[0].fields.Add(new Fields()
+                {
+                    name = "任務地圖",
+                    value = model.ClanMissionMap,
+                    inline = false
+                });
+            }
+
+            if (!String.IsNullOrEmpty(model.ClanMissionSupply))
+            {
+                this.embeds[0].fields.Add(new Fields()
+                {
+                    name = "任務補給",
+                    value = model.ClanMissionSupply,
+                    inline = false
+                });
+            }
+
             if (!String.IsNullOrEmpty(model.ClanMissionCommit))
             {
                 this.embeds[0].fields.Add(new Fields()
@@ -182,7 +196,7 @@ namespace DiscordMissionPubTool.Models
             this.embeds[0].fields.Add(new Fields()
             {
                 name = "模組清單",
-                value = model.ClanMissionModList,
+                value = (!String.IsNullOrEmpty(model.ClanMissionModList)) ? model.ClanMissionModList : "無",
                 inline = false
             });
         }
